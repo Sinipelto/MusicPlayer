@@ -2,5 +2,5 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     Player \
-    ../PlayerLibrary \
+    PlayerLibrary \
     PlayerTest
