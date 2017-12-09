@@ -7,6 +7,3 @@ CONFIG -= app_bundle
 TEMPLATE = app
 
 SOURCES +=  tst_testaddsong.cpp
-
-INCLUDEPATH += $$PWD/../../PlayerLibrary
-DEPENDPATH += $$PWD/../../PlayerLibrary

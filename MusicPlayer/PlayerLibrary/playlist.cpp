@@ -1,6 +1,6 @@
 #include "playlist.hh"
 
 
-Playlist::Playlist()
+PlayList::PlayList()
 {
 }

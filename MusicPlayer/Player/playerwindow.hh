@@ -2,6 +2,11 @@
 #define PLAYERWINDOW_HH
 
 #include <QMainWindow>
+#include <QTimer>
+#include <QPushButton>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QMessageBox>
 
 class PlayerWindow : public QMainWindow
 {
@@ -10,6 +15,25 @@ class PlayerWindow : public QMainWindow
 public:
     PlayerWindow(QWidget *parent = 0);
     ~PlayerWindow();
+
+private:
+    void initDialog();
+
+    QTimer* timer_;
+    QDialog* dialog_;
+
+    QHBoxLayout* hboxlayout_;
+
+    QPushButton* closeButton_;
+    QPushButton* saveButton_;
+
+    QLabel* countLabel_;
+
+    unsigned counter_;
+
+private slots:
+    void update();
+    void openDialog();
 };
 
 #endif // PLAYERWINDOW_HH

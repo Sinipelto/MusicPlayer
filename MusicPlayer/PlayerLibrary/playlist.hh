@@ -2,11 +2,11 @@
 #define PLAYLIST_HH
 
 
-class Playlist
+class PlayList
 {
 
 public:
-    Playlist();
+    PlayList();
 };
 
 #endif // PLAYLIST_HH
